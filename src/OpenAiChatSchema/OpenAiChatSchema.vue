@@ -5,7 +5,7 @@
 </template>
 
 <script>
-export const OpenAiChatSchema = (json) => {
+const OpenAiChatSchema = (json) => {
   return json.tasks.map((task, index) => {
     return {
       $el: 'section',
@@ -80,4 +80,7 @@ export const OpenAiChatSchema = (json) => {
     };
   });
 };
+
+export default OpenAiChatSchema;
+
 </script>
