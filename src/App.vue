@@ -1,7 +1,7 @@
 <script setup>
 import {FormKitSchema} from '@formkit/vue'
 import {ref} from 'vue'
-import OpenAiChatSchema from './OpenAiChatSchema/OpenAiChatSchema';
+import {OpenAiChatSchema} from './OpenAiChatSchema/OpenAiChatSchema';
 
 const jsonData = ref({
   "tasks": [

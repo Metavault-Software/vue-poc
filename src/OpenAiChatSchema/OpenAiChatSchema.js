@@ -1,11 +1,4 @@
-<template>
-  <div class="OpenAiChatSchema">
-    <pre v-text="$attrs"/>
-  </div>
-</template>
-
-<script>
-const OpenAiChatSchema = (json) => {
+export const OpenAiChatSchema = (json) => {
   return json.tasks.map((task, index) => {
     return {
       $el: 'section',
@@ -80,7 +73,3 @@ const OpenAiChatSchema = (json) => {
     };
   });
 };
-
-export default OpenAiChatSchema;
-
-</script>
